@@ -16,29 +16,30 @@
 
 <body>
     <div class="col-12 d-flex flex-column">
-        <header class="jumbotron jumbotron-fluid">
+        <header class="jumbotron">
             <h1 class="display-3">Work Day Scheduler</h1>
             <p class="lead">A simple calendar app for scheduling your work day</p>
             <p id="currentDay" class="lead">Monday, May 23rd, 2022</p>
         </header>
     </div>
     <div class="container container-sm container-md container-lg container-xl container-xxl">
-        <div class="row justify-content-md-left">
+        <div class="row justify-content-start">
             <!-- Timeblocks go here -->
-<!--9AM timeblock starts-->
-<div class="col col-lg-2">
-<h4>9AM</h4>
-</div>
-<div class="col-lg-4 w-75 p-2">
-<textarea></textarea>
-</div>
-<div class="col col-lg-2">
-    <button>Save</button>
-</div>
-<!--9AM timeblock ends-->
-</div>
+            <!--9AM timeblock starts-->
+            <div class="col description">
+                <h4 class="hour">9AM</h4>
+            </div>
+            <div class="col-6 time-block">
+                <textarea></textarea>
+            </div>
+            <div class="col">
+                <button class="saveBtn">Save</button>
+            </div>
+            <!--9AM timeblock ends-->
+        </div>
     </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
