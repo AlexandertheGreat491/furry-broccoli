@@ -27,4 +27,8 @@ $(".saveBtn").on("click", function(){
     // The text will be saved to local storage.
     localStorage.setItem(time, text);
 })
-})
+});
+
+function daySchedule() {
+
+}
