@@ -40,6 +40,7 @@ If you used any third-party assets that require attribution, list the creators w
 If you followed tutorials, include links to those here as well.
 Tutorials used:
 jQuery API. (2022). jQuery API Documentation. Retrieved May 22, 2022, from https://api.jquery.com/
+Moment.js moment.hour() Method. (2021, March 12). GeeksforGeeks. Retrieved May 22, 2022, from https://www.geeksforgeeks.org/moment-js-moment-hour-method/
 
 ## License
 
