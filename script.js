@@ -16,7 +16,9 @@ $(document).ready(function () {
     $("#currentDay").text(moment().format("dddd, MMM Do YYYY "))
     // Event listener for the save button.
     $(".saveBtn").on("click", function () {
+
         //Retrieves the nearest values of the description.
+
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
