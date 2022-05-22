@@ -25,5 +25,6 @@ $(".saveBtn").on("click", function(){
     //.parent() gets the parent of the matching element.
 
     // The text will be saved to local storage.
+    localStorage.setItem(time, text);
 })
 })
