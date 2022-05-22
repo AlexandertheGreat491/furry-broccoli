@@ -57,3 +57,5 @@ function daySchedule() {
         }
     })
 }
+
+// The item will be retrieved from local storage if it exists.
