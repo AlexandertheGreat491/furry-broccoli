@@ -12,6 +12,8 @@ planner and manage their time effectively.*/
 
 // set the format for the date that will display at the top of the work day schedule.
 var currentDate = moment().format('dddd, MMM Do YYYY');
+$("#currentDay").html(currentDate);
+//.html() gets the HTML contents of first element in the set of matched elements, which in this case is #currentDay.
 
 $(document).ready(function () {
     // Allows the page to be manipulated safely.
