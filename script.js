@@ -17,5 +17,7 @@ $("#currentDay").text(moment().format('dddd, MMM Do YYYY'));
 $(document).ready(function(){
 // Allows the page to be manipulated safely.
 // Event listener for the save button.
-
+$(".saveBtn").on("click", function(){
+    
+})
 })
