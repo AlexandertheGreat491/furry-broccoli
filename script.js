@@ -14,3 +14,4 @@ planner and manage their time effectively.*/
 var currentDay =
 $("#currentDay").text(moment().format('dddd, MMM Do YYYY'));
 
+// Event listener for the save button.
