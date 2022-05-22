@@ -36,6 +36,11 @@ var currentTime = moment().hour();
 // Timeblocks loop
 
 $(".time-block").each(function(){
+    var timeBlock = parseInt($(this).attr("id").split("hour")[1])
+    /* split() method dives a string into an ordered list of subsgtrings,
+    puts these substrings into an array, and returns the array. The
+    division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
     
+// These conditions check the time and add the classes for background indicators.
 })
 }
