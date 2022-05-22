@@ -11,8 +11,7 @@ planner and manage their time effectively.*/
 
 
 // set the format for the date that will display at the top of the work day schedule.
-var currentDay =
-    $("#currentDay").text(moment().format('dddd, MMM Do YYYY'));
+var currentDay = moment().format('dddd, MMM Do YYYY');
 
 $(document).ready(function () {
     // Allows the page to be manipulated safely.
@@ -29,24 +28,24 @@ $(document).ready(function () {
     })
 
 
-function daySchedule() {
+function dailyEvents() {
     // gives the current number of hours
     var currentTime = moment().hour();
 
     // Timeblocks loop
 
     $(".time-block").each(function () {
-        var timeBlock = parseInt($(this).attr("id").split("hour")[1])
+        var blockTime = parseInt($(this).attr("id").split("hour")[1])
         /* split() method dives a string into an ordered list of subsgtrings,
         puts these substrings into an array, and returns the array. The
         division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
 
         // These conditions check the time and add the classes for background indicators.
-        if (timeBlock < currenTime) {
+        if (blockTime < currentTime) {
             $(this).removeClass("future");
             $(this).removeClass("present");
             $(this).addClass("past");
-        } else if (timeBlock === timeNow) {
+        } else if (blockTime === currentTime) {
             $(this).removeClass("past");
             $(this).removeClass("future");
             $(this).addClass("present");
@@ -60,7 +59,6 @@ function daySchedule() {
 
 // The item will be retrieved from local storage if it exists.
 
-$("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -72,6 +70,6 @@ $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
 
 
-daySchedule();
+dailyEvents();
 
 })
