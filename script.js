@@ -27,7 +27,7 @@ $(document).ready(function () {
         // The text will be saved to local storage.
         localStorage.setItem(time, text);
     })
-});
+
 
 function daySchedule() {
     // gives the current number of hours
@@ -59,3 +59,17 @@ function daySchedule() {
 }
 
 // The item will be retrieved from local storage if it exists.
+
+$("#nine .description").val(localStorage.getItem("nine"));
+$("#ten .description").val(localStorage.getItem("ten"));
+$("#eleven .description").val(localStorage.getItem("eleven"));
+$("#noon .description").val(localStorage.getItem("noon"));
+$("#one .description").val(localStorage.getItem("one"));
+$("#two .description").val(localStorage.getItem("two"));
+$("#three .description").val(localStorage.getItem("three"));
+$("#four .description").val(localStorage.getItem("four"));
+$("#five .description").val(localStorage.getItem("five"));
+
+daySchedule();
+
+})
