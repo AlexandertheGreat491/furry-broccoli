@@ -42,6 +42,7 @@ Tutorials used:
 (2022). Font Awesome. Retrieved May 22, 2022, from https://fontawesome.com/v5/icons/save?s=solid
 jQuery API. (2022). jQuery API Documentation. Retrieved May 22, 2022, from https://api.jquery.com/
 Moment.js moment.hour() Method. (2021, March 12). GeeksforGeeks. Retrieved May 22, 2022, from https://www.geeksforgeeks.org/moment-js-moment-hour-method/
+Moment.js Documentation. (2020). Moment.js. Retrieved May 22, 2022, from https://momentjs.com/docs/#/-project-status/
 
 ## License
 
