@@ -41,3 +41,10 @@ saveBtn.on("click", function(){
     // Event will be saved in local storage.
     localStorage.setItem(time, dailyEvent);
 });
+
+// After the page is refreshed the saved events persist.
+
+function schedulerUsage() {
+    var currHour = $(this).text();
+    var currDailyEvent = localStorage.getItem(currHour);
+}
