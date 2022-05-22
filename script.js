@@ -11,6 +11,8 @@ planner and manage their time effectively.*/
 
 
 // set the format for the date that will display at the top of the work day schedule.
+// uses moment() to get the date for a particular day.
+
 var currentDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(currentDate);
 //.html() gets the HTML contents of first element in the set of matched elements, which in this case is #currentDay.
@@ -32,6 +34,7 @@ $(document).ready(function () {
 
 function dailyEvents() {
     // gives the current number of hours
+    // uses moment() to get the time.
     var currentTime = moment().hour();
 
     // Timeblocks loop
