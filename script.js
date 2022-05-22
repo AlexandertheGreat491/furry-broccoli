@@ -28,7 +28,6 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
     })
 
-
     function dailyEvents() {
 
         // uses moment().hours() method to get the hours from the current time.
