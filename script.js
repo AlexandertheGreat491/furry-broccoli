@@ -31,3 +31,13 @@ $(this).addClass("future");
     }
     })
 };
+
+// Event listener for when user clicks on the "Save" button.
+
+saveBtn.on("click", function(){
+    var time = $(this).siblings(".hour").text();
+    var dailyEvent = $(this).siblings(".dailyEvent").val();
+
+    // Event will be saved in local storage.
+    localStorage.setItem(time, dailyEvent);
+});
