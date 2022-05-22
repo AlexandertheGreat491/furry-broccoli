@@ -11,7 +11,7 @@ planner and manage their time effectively.*/
 
 
 // set the format for the date that will display at the top of the work day schedule.
-var currentDay = moment().format('dddd, MMM Do YYYY');
+var todayDate = moment().format('dddd, MMM Do YYYY');
 
 $(document).ready(function () {
     // Allows the page to be manipulated safely.
@@ -28,9 +28,9 @@ $(document).ready(function () {
     })
 
 
-function dailyEvents() {
+function timeTracker() {
     // gives the current number of hours
-    var currentTime = moment().hour();
+    var timeNow = moment().hour();
 
     // Timeblocks loop
 
@@ -41,11 +41,11 @@ function dailyEvents() {
         division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
 
         // These conditions check the time and add the classes for background indicators.
-        if (blockTime < currentTime) {
+        if (blockTime < timeNow) {
             $(this).removeClass("future");
             $(this).removeClass("present");
             $(this).addClass("past");
-        } else if (blockTime === currentTime) {
+        } else if (blockTime === timeNow) {
             $(this).removeClass("past");
             $(this).removeClass("future");
             $(this).addClass("present");
@@ -70,6 +70,6 @@ function dailyEvents() {
     $("#hour17 .description").val(localStorage.getItem("hour17"));
 
 
-dailyEvents();
+timeTracker();
 
 })
