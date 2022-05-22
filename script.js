@@ -9,16 +9,11 @@ planner and manage their time effectively.*/
 // User clicks on the save button for that timeblock, the text is save in local storage.
 // User refreshes the page and the saved event persists.
 
-
-// set the format for the date that will display at the top of the work day schedule.
-// uses moment() to get the date for a particular day.
-
-var currentDate = moment().format('dddd, MMM Do YYYY');
-$("#currentDay").html(currentDate);
-//.html() gets the HTML contents of first element in the set of matched elements, which in this case is #currentDay.
-
 $(document).ready(function () {
     // Allows the page to be manipulated safely.
+    // set the format for the date that will display at the top of the work day schedule.
+    // uses moment() to get the date for a particular day.
+    $("#currentDay").text(moment().format("dddd, MMM Do YYYY "))
     // Event listener for the save button.
     $(".saveBtn").on("click", function () {
         //Retrieves the nearest values of the description.
@@ -32,31 +27,31 @@ $(document).ready(function () {
     })
 
 
-function dailyEvents() {
-    // gives the current number of hours
-    // uses moment() to get the time.
-    var currentTime = moment().hour();
+    function dailyEvents() {
+        // gives the current number of hours
+        // uses moment() to get the time.
+        var currentTime = moment().hour();
 
-    // Timeblocks loop
+        // Timeblocks loop
 
-    $(".time-block").each(function () {
-        var blockTime = parseInt($(this).attr("id").split("hour")[1])
-        /* split() method dives a string into an ordered list of subsgtrings,
-        puts these substrings into an array, and returns the array. The
-        division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
+        $(".time-block").each(function () {
+            var blockTime = parseInt($(this).attr("id").split("hour")[1])
+            /* split() method dives a string into an ordered list of subsgtrings,
+            puts these substrings into an array, and returns the array. The
+            division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
 
-        // These conditions check the time and add the classes for background indicators.
-        if (blockTime > currentTime) {
-            $(this).addClass("future");
-        } else if (blockTime === currentTime) {
-            $(this).addClass("present");
-        } else {
-            $(this).addClass("past");
-        }
-    })
-}
+            // These conditions check the time and add the classes for background indicators.
+            if (blockTime > currentTime) {
+                $(this).addClass("future");
+            } else if (blockTime === currentTime) {
+                $(this).addClass("present");
+            } else {
+                $(this).addClass("past");
+            }
+        })
+    }
 
-// The item will be retrieved from local storage if it exists.
+    // The item will be retrieved from local storage if it exists.
 
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
@@ -69,6 +64,6 @@ function dailyEvents() {
     $("#hour17 .description").val(localStorage.getItem("hour17"));
 
 
-dailyEvents();
+    dailyEvents();
 
 })
