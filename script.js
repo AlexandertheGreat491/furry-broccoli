@@ -17,5 +17,9 @@ $("#currentDay").text(moment().format('YYYY MM DD'));
 // timeblocks are color coded to indicated past, present, or future.
 function colorBlock () {
     var hour = moment().hours();
-    // moment().hour() method gets the current time
+    // moment().hour() method gets the current time.
+// .each(function) will execute and iterate over the .time-block element.
+    $(".time-block").each(function(){
+
+    })
 }
