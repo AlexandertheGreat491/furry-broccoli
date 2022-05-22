@@ -1,20 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     line-height: 1;
   }
   
-  h4 {
-      font-size: 14px;
-  }
-
-  h1 {
-      font-size: 20px;
-  }
-
-  .lead {
-      font-size: 18px;
-  }
-
   textarea {
     background: transparent;
     border: none;
@@ -75,7 +64,7 @@ body {
     background-color: #06AED5;
     color: white;
   }
-  
+
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
