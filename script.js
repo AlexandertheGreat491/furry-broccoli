@@ -9,4 +9,4 @@ planner and manage their time effectively.*/
 //User clicks on the save button for that timeblock, the text is save in local storage.
 //User refreshes the page and the saved event persists.
 
-
+var events = {};
