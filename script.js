@@ -30,7 +30,7 @@ $(document).ready(function () {
     function dailyEvents() {
         // gives the current number of hours
         // uses moment() to get the time.
-        var currentTime = moment().hour();
+        var currentTime = moment().hours();
 
         // Timeblocks loop
 
