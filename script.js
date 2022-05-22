@@ -46,18 +46,12 @@ function dailyEvents() {
         division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
 
         // These conditions check the time and add the classes for background indicators.
-        if (blockTime < currentTime) {
-            $(this).removeClass("future");
-            $(this).removeClass("present");
-            $(this).addClass("past");
+        if (blockTime > currentTime) {
+            $(this).addClass("future");
         } else if (blockTime === currentTime) {
-            $(this).removeClass("past");
-            $(this).removeClass("future");
             $(this).addClass("present");
         } else {
-            $(this).removeClass("present");
-            $(this).removeClass("past");
-            $(this).addClass("future");
+            $(this).addClass("past");
         }
     })
 }
