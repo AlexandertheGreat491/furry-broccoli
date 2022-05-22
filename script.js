@@ -12,35 +12,48 @@ planner and manage their time effectively.*/
 
 // set the format for the date that will display at the top of the work day schedule.
 var currentDay =
-$("#currentDay").text(moment().format('dddd, MMM Do YYYY'));
+    $("#currentDay").text(moment().format('dddd, MMM Do YYYY'));
 
-$(document).ready(function(){
-// Allows the page to be manipulated safely.
-// Event listener for the save button.
-$(".saveBtn").on("click", function(){
-    //Retrieves the nearest values of the description.
-    var text = $(this).siblings(".description").val();
-    var time = $(this).parent().attr("id");
-    //.siblings() gets the siblings of the set of elements that match.
-    //.parent() gets the parent of the matching element.
+$(document).ready(function () {
+    // Allows the page to be manipulated safely.
+    // Event listener for the save button.
+    $(".saveBtn").on("click", function () {
+        //Retrieves the nearest values of the description.
+        var text = $(this).siblings(".description").val();
+        var time = $(this).parent().attr("id");
+        //.siblings() gets the siblings of the set of elements that match.
+        //.parent() gets the parent of the matching element.
 
-    // The text will be saved to local storage.
-    localStorage.setItem(time, text);
-})
+        // The text will be saved to local storage.
+        localStorage.setItem(time, text);
+    })
 });
 
 function daySchedule() {
-// gives the current number of hours
-var currentTime = moment().hour();
+    // gives the current number of hours
+    var currentTime = moment().hour();
 
-// Timeblocks loop
+    // Timeblocks loop
 
-$(".time-block").each(function(){
-    var timeBlock = parseInt($(this).attr("id").split("hour")[1])
-    /* split() method dives a string into an ordered list of subsgtrings,
-    puts these substrings into an array, and returns the array. The
-    division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
-    
-// These conditions check the time and add the classes for background indicators.
-})
+    $(".time-block").each(function () {
+        var timeBlock = parseInt($(this).attr("id").split("hour")[1])
+        /* split() method dives a string into an ordered list of subsgtrings,
+        puts these substrings into an array, and returns the array. The
+        division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
+
+        // These conditions check the time and add the classes for background indicators.
+        if (timeBlock < currenTime) {
+            $(this).removeClass("future");
+            $(this).removeClass("present");
+            $(this).addClass("past");
+        } else if (timeBlock === timeNow) {
+            $(this).removeClass("past");
+            $(this).removeClass("future");
+            $(this).addClass("present");
+        } else {
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("future");
+        }
+    })
 }
