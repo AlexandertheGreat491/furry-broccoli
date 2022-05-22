@@ -23,5 +23,7 @@ $(".saveBtn").on("click", function(){
     var time = $(this).parent().attr("id");
     //.siblings() gets the siblings of the set of elements that match.
     //.parent() gets the parent of the matching element.
+
+    // The text will be saved to local storage.
 })
 })
