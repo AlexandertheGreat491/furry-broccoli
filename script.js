@@ -45,6 +45,13 @@ saveBtn.on("click", function(){
 // After the page is refreshed the saved events persist.
 
 function schedulerUsage() {
-    var currHour = $(this).text();
-    var currDailyEvent = localStorage.getItem(currHour);
+    $(".hour").each(function(){
+        var currHour = $(this).text();
+        var currDailyEvent = localStorage.getItem(currHour);
+    
+        if(currDailyEvent !== null) {
+            $(this).siblings(".dailyEvent").val(currDailyEvent);
+        }
+    });
+    
 }
