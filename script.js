@@ -19,7 +19,7 @@ $(document).ready(function () {
         //Retrieves the nearest values of the description.
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
-        
+
         //.siblings() gets the siblings of the set of elements that match.
         //.parent() gets the parent of the matching element.
 
@@ -30,8 +30,9 @@ $(document).ready(function () {
 
 
     function dailyEvents() {
-        // gives the current number of hours
-        // uses moment() to get the time.
+
+        // uses moment().hours() method to get the hours from the current time.
+
         var currentTime = moment().hours();
 
         // Timeblocks loop
