@@ -11,3 +11,6 @@ planner and manage their time effectively.*/
 
 var saveBtn = $(".saveBtn");
 
+// set the format for the date that will display at the top of the work day schedule.
+
+$("#currentDay").text(moment().format('YYYY MM DD'));
