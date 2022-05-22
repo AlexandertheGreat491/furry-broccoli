@@ -9,49 +9,8 @@ planner and manage their time effectively.*/
 // User clicks on the save button for that timeblock, the text is save in local storage.
 // User refreshes the page and the saved event persists.
 
-var saveBtn = $(".saveBtn");
 
 // set the format for the date that will display at the top of the work day schedule.
+var currentDay =
+$("#currentDay").text(moment().format('dddd, MMM Do YYYY'));
 
-$("#currentDay").text(moment().format('YYYY MM DD'));
-// timeblocks are color coded to indicated past, present, or future.
-function colorBlock () {
-    var hour = moment().hours();
-    // moment().hour() method gets the current time.
-// .each(function) will execute and iterate over the .time-block element.
-    $(".time-block").each(function(){
-    var currHour = parseInt($(this).attr("id"));
-// selects the attribute that will be acted upon by this function & conditional statements.
-    if (currHour > hour) {
-$(this).addClass("future");
-    } else if (currHour === hour) {
-        $(this).addClass("present");
-    } else {
-        $(this).addClass("past");
-    }
-    })
-};
-
-// Event listener for when user clicks on the "Save" button.
-
-saveBtn.on("click", function(){
-    var time = $(this).siblings(".hour").text();
-    var dailyEvent = $(this).siblings(".dailyEvent").val();
-
-    // Event will be saved in local storage.
-    localStorage.setItem(time, dailyEvent);
-});
-
-// After the page is refreshed the saved events persist.
-
-function schedulerUsage() {
-    $(".hour").each(function(){
-        var currHour = $(this).text();
-        var currDailyEvent = localStorage.getItem(currHour);
-    
-        if(currDailyEvent !== null) {
-            $(this).siblings(".dailyEvent").val(currDailyEvent);
-        }
-    });
-    
-}
