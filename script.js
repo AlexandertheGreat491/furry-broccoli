@@ -30,5 +30,12 @@ $(".saveBtn").on("click", function(){
 });
 
 function daySchedule() {
+// gives the current number of hours
+var currentTime = moment().hour();
 
+// Timeblocks loop
+
+$(".time-block").each(function(){
+    
+})
 }
