@@ -20,6 +20,14 @@ function colorBlock () {
     // moment().hour() method gets the current time.
 // .each(function) will execute and iterate over the .time-block element.
     $(".time-block").each(function(){
-
+    var currHour = parseInt($(this).attr("id"));
+// selects the attribute that will be acted upon by this function & conditional statements.
+    if (currHour > hour) {
+$(this).addClass("future");
+    } else if (currHour === hour) {
+        $(this).addClass("present");
+    } else {
+        $(this).addClass("past");
+    }
     })
-}
+};
