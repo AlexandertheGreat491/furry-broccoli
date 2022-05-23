@@ -8,14 +8,7 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
-## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
@@ -23,22 +16,16 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+[Public Repository URL](https://github.com/AlexandertheGreat491/furry-broccoli)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+[Alex Van Dyke](https://github.com/AlexandertheGreat491/furry-broccoli)
 
-If you followed tutorials, include links to those here as well.
 Tutorials used:
+
 (2022). Font Awesome. Retrieved May 22, 2022, from https://fontawesome.com/v5/icons/save?s=solid
 jQuery API. (2022). jQuery API Documentation. Retrieved May 22, 2022, from https://api.jquery.com/
 Moment.js moment.hour() Method. (2021, March 12). GeeksforGeeks. Retrieved May 22, 2022, from https://www.geeksforgeeks.org/moment-js-moment-hour-method/
