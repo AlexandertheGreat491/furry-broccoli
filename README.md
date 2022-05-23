@@ -36,7 +36,10 @@ Tutorials used:
 jQuery API. (2022). jQuery API Documentation. Retrieved May 22, 2022, from https://api.jquery.com/
 Moment.js moment.hour() Method. (2021, March 12). GeeksforGeeks. Retrieved May 22, 2022, from https://www.geeksforgeeks.org/moment-js-moment-hour-method/
 Moment.js Documentation. (2020). Moment.js. Retrieved May 22, 2022, from https://momentjs.com/docs/#/-project-status/
-
+Mozilla Foundation Mozilla Developer Network. (2022). JavaScript. https://developer.mozilla.org/en-US/docs/Web/JavaScript
+W3Schools. (2022). CSS Tutorial. W3Schools. https://www.w3schools.com/css/default.asp
+W3Schools. (2022). HTML Tutorial. W3Schools. https://www.w3schools.com/html/default.asp
+W3Schools. (2022). JavaScript Tutorial. W3Schools. https://www.w3schools.com/js/default.asp
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
