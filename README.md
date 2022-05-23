@@ -1,13 +1,15 @@
 # Work Day Scheduler
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
 - What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+My motivation for this project was to create a week day scheduler for busy employees so that they can manage their time effectively.
+- Why did you build this project?
+I created this project to better enable employees to manage their time. 
 - What problem does it solve?
+The problems that are solved are employee time management and creating an application that can track and store items added to specific timeblocks.
 - What did you learn?
-
+I learned how to manipulate Bootstrap, jQuery, and Moment.js to work with times and dates with Moment.js, style an applications with Bootstrap and CSS, and manipulate a page using jQuery methods.
 
 
 ## Installation
