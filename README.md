@@ -12,9 +12,13 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To use this project, please close the project repository to your local computer.
 
 ## Usage
+
+The project can be used through accessing the deployed URL and/or through accessing the public GitHub repository for this project.
+
+[Deployed Application URL](https://alexanderthegreat491.github.io/furry-broccoli/)
 
 [Public Repository URL](https://github.com/AlexandertheGreat491/furry-broccoli)
 
