@@ -11,8 +11,8 @@ planner and manage their time effectively.*/
 
 $(document).ready(function () {
     // Allows the page to be manipulated safely.
-    // set the format for the date that will display at the top of the work day schedule.
-    // uses moment() to get the date for a particular day.
+    // Set the format for the date that will display at the top of the work day schedule.
+    // Uses moment() to get the date for a particular day.
     $("#today").text(moment().format("dddd, MMM Do YYYY "))
 
     // Event listener for the save button.
