@@ -14,25 +14,27 @@ $(document).ready(function () {
     // set the format for the date that will display at the top of the work day schedule.
     // uses moment() to get the date for a particular day.
     $("#today").text(moment().format("dddd, MMM Do YYYY "))
+
     // Event listener for the save button.
     $(".saveBtn").on("click", function () {
 
-        //Retrieves the nearest values of the description.
+        /* Retrieves the nearest values of the description class and the id attribute 
+        when the button saveBtn class is clicked.*/
 
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
-        //.siblings() gets the siblings of the set of elements that match.
-        //.parent() gets the parent of the matching element.
+        // The .siblings() method gets the siblings of the set of elements that match.
+        // The .parent() method gets the parent of the matching element with the id attribute.
 
-        // The text will be saved to local storage.
+        // The text entered by the user will be saved to local storage.
 
         localStorage.setItem(time, text);
     })
 
     function dailyEvents() {
 
-        // uses moment().hours() method to get the hours from the current time.
+        // Uses moment().hours() method to get the hours from the current time.
 
         var currentTime = moment().hours();
 
@@ -40,11 +42,13 @@ $(document).ready(function () {
 
         $(".time-block").each(function () {
             var blockTime = parseInt($(this).attr("id").split("hour")[1])
-            /* split() method dives a string into an ordered list of subsgtrings,
+            // parseInt method parses a value as a string and returns the first integer.
+            /* split() method divides a string into an ordered list of substrings,
             puts these substrings into an array, and returns the array. The
             division is done by searching for a pattern & the first parameter in that pattern comes first in this method's call.*/
 
-            // These conditions check the time and add the classes for background indicators.
+            // These conditions check the time and add the classes to designate the timeblocks as being in the past, present, or the future.
+
             if (blockTime > currentTime) {
                 $(this).addClass("future");
             } else if (blockTime === currentTime) {
@@ -55,7 +59,7 @@ $(document).ready(function () {
         })
     }
 
-    // The item will be retrieved from local storage if it exists.
+    // The the value will be retrieved from local storage depending on the id that the value is associated with.
 
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
