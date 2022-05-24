@@ -1,4 +1,5 @@
 # Work Day Scheduler
+
 ## Description
 
 
@@ -24,6 +25,9 @@ The project can be used through accessing the deployed URL and/or through access
 
 [Public Repository URL](https://github.com/AlexandertheGreat491/furry-broccoli)
 
+![deployed application screenshot](https://user-images.githubusercontent.com/64184203/169903640-cdc0f7c2-58b6-4815-a4e2-e9094896f5ae.jpg)
+
+
 ## Credits
 
 Collaborators:
@@ -40,6 +44,7 @@ Mozilla Foundation Mozilla Developer Network. (2022). JavaScript. https://develo
 W3Schools. (2022). CSS Tutorial. W3Schools. https://www.w3schools.com/css/default.asp
 W3Schools. (2022). HTML Tutorial. W3Schools. https://www.w3schools.com/html/default.asp
 W3Schools. (2022). JavaScript Tutorial. W3Schools. https://www.w3schools.com/js/default.asp
+
 ## License
 
                GNU GENERAL PUBLIC LICENSE
