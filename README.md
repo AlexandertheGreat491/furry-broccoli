@@ -15,7 +15,7 @@ I learned how to manipulate Bootstrap, jQuery, and Moment.js to work with times 
 
 ## Installation
 
-To use this project, please close the project repository to your local computer.
+To use this project, please clone the project repository to your local computer.
 
 ## Usage
 
